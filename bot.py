@@ -10,7 +10,7 @@ def start_handler(message):
     keyboard = InlineKeyboardMarkup()
     keyboard.add(InlineKeyboardButton(
         text="Алға ➡️",
-        web_app=WebAppInfourl="https://graceful-peony-98922f.netlify.app/")
+        web_app=WebAppInfo(url="https://graceful-peony-98922f.netlify.app/")
     ))
     bot.send_message(
         message.chat.id,
@@ -19,4 +19,3 @@ def start_handler(message):
     )
 
 bot.infinity_polling()
-
